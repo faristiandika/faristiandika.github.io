@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. Faris Tiandika — Web Developer</title>
+<meta name="description" content="Portofolio M. Faris Tiandika, mahasiswa ilmu komputer dan web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Faris</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#certificate">Sertifikat</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Halo, saya</p>
+        <h1>M. Faris Tiandika</h1>
+        <p class="hero-sub">Mahasiswa ilmu komputer<br>Web developer dan programmer</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Lihat proyek</a>
+          <a href="assets/cv-faris-tiandika.pdf" class="btn btn-outline" download>Unduh CV</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/foto-diri.jpg" alt="Foto M. Faris Tiandika" onerror="this.style.display='none'; this.parentElement.classList.add('photo-empty')">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-alt">
+    <div class="section-inner">
+      <p class="eyebrow">Tentang saya</p>
+      <p class="about-text">Saya mahasiswa informatika yang tertarik pada web development, database, UI/UX, dan teknologi. Saya senang membangun sistem dari nol, mulai dari tampilan sampai ke bagian admin di baliknya.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="eyebrow">Proyek saya</p>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="assets/img/project-website.jpg" alt="Tampilan website organisasi" onerror="this.parentElement.classList.add('thumb-empty')">
+          </div>
+          <h3>Website organisasi</h3>
+          <p class="project-stack">PHP · MySQL</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="assets/img/project-topup.jpg" alt="Tampilan website top up game" onerror="this.parentElement.classList.add('thumb-empty')">
+          </div>
+          <h3>Top up game</h3>
+          <p class="project-stack">HTML · PHP</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="assets/img/project-terranusa.jpg" alt="Tampilan website Terra Nusa" onerror="this.parentElement.classList.add('thumb-empty')">
+          </div>
+          <h3>Terra Nusa</h3>
+          <p class="project-stack">HTML · CSS · JS</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <p class="eyebrow">Pendidikan</p>
+      <div class="edu-row">
+        <span>Ilmu komputer, Universitas Nurul Jadid</span>
+        <span class="muted">2024–sekarang</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate" class="section certificate-section">
+    <div class="section-inner center">
+      <p class="eyebrow">Sertifikat</p>
+      <p class="cert-sub">Lihat sertifikat dan pencapaian yang pernah diraih.</p>
+      <button class="btn btn-outline" id="certBtn">Lihat sertifikat</button>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="section-inner center">
+      <p class="eyebrow">Kontak</p>
+      <ul class="contact-list">
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://instagram.com/your-username" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<div class="modal" id="certModal">
+  <div class="modal-card">
+    <button class="modal-close" id="certClose" aria-label="Tutup">&times;</button>
+    <div class="modal-icon" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="12" cy="8" r="5"></circle>
+        <path d="M8.5 13 7 22l5-3 5 3-1.5-9"></path>
+      </svg>
+    </div>
+    <h3>Sertifikat pengembangan web</h3>
+    <p>Kontribusi membangun sistem digital Terra Nusa Alaskindo.</p>
+    <button class="btn btn-primary modal-btn" id="certClose2">Tutup</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
